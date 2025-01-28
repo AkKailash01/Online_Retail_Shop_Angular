@@ -2,6 +2,14 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
+## Features
+
+- **Product Management**: Admin can add, update, and delete products.
+- **Cart Functionality**: Users can add products to their cart and adjust the quantity.
+- **Order Placement**: Users can place orders, which are sent to the backend for processing.
+- **Notifications**: Success and error messages are displayed using Toastr notifications.
+- **Responsive Design**: The application is designed to work on both desktop and mobile devices.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
