@@ -1,4 +1,4 @@
-# Ors3
+# Online Retail Shop using Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
