@@ -1,0 +1,54 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /*#f4f4f4*/
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    margin-bottom: 0; /* Ensure no extra margin */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+/* Router Outlet */
+router-outlet {
+    display: block; 
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    padding: 0; /* Removed padding */
+    border-radius: 8px;
+    box-shadow: none; /* No shadow on the router-outlet */
+    visibility: hidden; /* Hide if no content */
+}
+
+
+/* Ensure there's no extra space below hr */
+hr {
+    margin: 10px 0; /* Adjust margin to remove extra space */
+    border: 1px solid #ddd;
+}

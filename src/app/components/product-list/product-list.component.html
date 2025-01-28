@@ -1,0 +1,23 @@
+<div class="search-container">
+  <input
+    type="text"
+    [(ngModel)]="searchQuery"
+    (input)="onSearch()"
+    placeholder="Search for products..."
+    class="search-bar"
+  />
+</div>
+
+<div class="product-list">
+  <!-- Iterate over filteredProducts, not products -->
+  <div class="product-card" *ngFor="let product of filteredProducts">
+    <h3>{{ product.ProductName }}</h3>
+    <p><strong>Quantity:</strong> {{ product.Quantity }}</p>
+    <p><strong>Status:</strong>
+      <span [class.inactive]="product.Quantity <= 0">
+        {{ product.Quantity > 0 ? 'For Sale' : 'Unavailable' }}
+      </span>
+    </p>
+    <button (click)="addToCart(product)" class="btn btn-primary">Add to Cart</button>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<h2 id="order-products-title">Order Products</h2>
+
+<!-- Display the cart items -->
+<div *ngIf="cartProducts.length > 0" id="cart-container">
+  <h3 id="cart-header">Your Cart</h3>
+  <ul id="cart-list">
+    <li *ngFor="let product of cartProducts" class="cart-item">
+      <span class="product-name">{{ product.ProductName }} - {{ product.Quantity }} available</span>
+      <br>
+      <strong>Quantity:</strong>
+      <button type="button" (click)="decreaseOrderQuantity(product.ProductId)" class="quantity-btn">-</button>
+      <span class="order-quantity">{{ product.OrderQuantity }}</span>
+      <button type="button" (click)="increaseOrderQuantity(product.ProductId)" class="quantity-btn">+</button>
+      <button type="button" (click)="removeFromCart(product.ProductId)" class="remove-btn">Remove</button>
+    </li>
+  </ul>
+  <button (click)="placeOrder()" class="btn btn-success" id="place-order-btn">Place Order</button>
+</div>
+
+<!-- Empty Cart Message -->
+<div *ngIf="cartProducts.length === 0" id="empty-cart-message">
+  <p>Your cart is empty.</p>
+</div>

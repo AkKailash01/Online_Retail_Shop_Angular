@@ -1,0 +1,7 @@
+<h2>Add Product</h2>
+<form [formGroup]="productForm" (ngSubmit)="addProduct()">
+  <label>Product Name: <input formControlName="productName"></label>
+  <label>Quantity: <input formControlName="quantity" ></label>
+  <label>Is Active: <input formControlName="isActive" type="checkbox"></label>
+  <button type="submit">Add Product</button>
+</form>
