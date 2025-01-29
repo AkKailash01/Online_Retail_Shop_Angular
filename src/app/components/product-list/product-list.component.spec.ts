@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientTestingModule } from '@angular/common/http/testing';  // Import HttpClientTestingModule
+import { HttpClientTestingModule } from '@angular/common/http/testing';  
 import { ProductListComponent } from './product-list.component';
-import { FormsModule } from '@angular/forms';  //  Import FormsModule
-import { ProductService } from 'src/app/services/product.service';  // Import the ProductService if used
-import { ToastrModule } from 'ngx-toastr'; // Import ToastrModule
+import { FormsModule } from '@angular/forms';  
+import { ProductService } from 'src/app/services/product.service';  
+import { ToastrModule } from 'ngx-toastr'; 
 
 describe('ProductListComponent', () => {
   let component: ProductListComponent;
   let fixture: ComponentFixture<ProductListComponent>;
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule,ToastrModule.forRoot(),FormsModule],  // Import the HttpClientTestingModule for HTTP requests
-      declarations: [ProductListComponent],  // Declare the component being tested
-      providers: [ProductService]  // Provide ProductService if it's injected into the component
+      imports: [HttpClientTestingModule,ToastrModule.forRoot(),FormsModule],  
+      declarations: [ProductListComponent],  
+      providers: [ProductService]  
     });
 
     fixture = TestBed.createComponent(ProductListComponent);
@@ -21,6 +21,6 @@ describe('ProductListComponent', () => {
   });
 
   it('should create', () => {
-    expect(component).toBeTruthy();  // Ensure the component is created successfully
+    expect(component).toBeTruthy();  
   });
 });

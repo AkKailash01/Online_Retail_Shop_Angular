@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; /*#f4f4f4*/
+    background-color: #f4f4f4; 
 }
 
 h1 {
@@ -18,7 +18,7 @@ nav {
     color: white;
     padding: 10px 20px;
     text-align: center;
-    margin-bottom: 0; /* Ensure no extra margin */
+    margin-bottom: 0; 
 }
 
 nav a {
@@ -40,15 +40,15 @@ router-outlet {
     width: 90%;
     max-width: 1200px;
     background-color: white;
-    padding: 0; /* Removed padding */
+    padding: 0; 
     border-radius: 8px;
-    box-shadow: none; /* No shadow on the router-outlet */
-    visibility: hidden; /* Hide if no content */
+    box-shadow: none; 
+    visibility: hidden; 
 }
 
 
-/* Ensure there's no extra space below hr */
+
 hr {
-    margin: 10px 0; /* Adjust margin to remove extra space */
+    margin: 10px 0; 
     border: 1px solid #ddd;
 }

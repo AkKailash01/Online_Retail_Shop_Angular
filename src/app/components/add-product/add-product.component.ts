@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../../services/product.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router'; // For navigation
-import { ToastrService } from 'ngx-toastr'; // Toastr for notifications
+import { Router } from '@angular/router'; 
+import { ToastrService } from 'ngx-toastr'; 
 
 @Component({
   selector: 'app-add-product',
@@ -15,8 +15,8 @@ export class AddProductComponent {
   constructor(
     private fb: FormBuilder, 
     private productService: ProductService,
-    private router: Router, // For routing after adding product
-    private toastr: ToastrService // Toastr for notifications
+    private router: Router, 
+    private toastr: ToastrService 
   ) {
     this.productForm = this.fb.group({
       productName: ['', Validators.required], // Added validation for product name

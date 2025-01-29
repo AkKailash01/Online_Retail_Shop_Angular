@@ -25,8 +25,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    BrowserAnimationsModule, // Required for ngx-toastr
-    ToastrModule.forRoot() // Initialize ToastrModule globally
+    BrowserAnimationsModule, 
+    ToastrModule.forRoot() 
     
   ],
   providers: [],
