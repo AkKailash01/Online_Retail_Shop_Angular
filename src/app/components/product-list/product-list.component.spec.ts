@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { HttpClientTestingModule } from '@angular/common/http/testing';  // Import HttpClientTestingModule
 import { ProductListComponent } from './product-list.component';
-import { FormsModule } from '@angular/forms';  // ✅ Import FormsModule
+import { FormsModule } from '@angular/forms';  //  Import FormsModule
 import { ProductService } from 'src/app/services/product.service';  // Import the ProductService if used
 import { ToastrModule } from 'ngx-toastr'; // Import ToastrModule
 
