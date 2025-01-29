@@ -7,7 +7,6 @@ import { ToastrModule } from 'ngx-toastr'; // Import ToastrModule
 describe('ProductListComponent', () => {
   let component: ProductListComponent;
   let fixture: ComponentFixture<ProductListComponent>;
-
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [HttpClientTestingModule,ToastrModule.forRoot(),FormsModule],  // Import the HttpClientTestingModule for HTTP requests
