@@ -30,7 +30,7 @@ export class AddProductComponent {
     if (this.productForm.invalid) {
       // Show error if productName or quantity is not valid
       if (this.productForm.get('productName')?.invalid) {
-        this.toastr.error('Product name is required', 'Error');
+        this.toastr.error('Product name is required', 'Error');                                   
       }
       if (this.productForm.get('quantity')?.invalid) {
         if (this.productForm.get('quantity')?.value === 0) {

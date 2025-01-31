@@ -1,1 +1,8 @@
 /* Global CSS */
+body{
+    background-image: url('./assets/bg.jpg'); 
+    background-size: auto;
+}
+p{
+    font-family:'Times New Roman', Times, serif;
+}

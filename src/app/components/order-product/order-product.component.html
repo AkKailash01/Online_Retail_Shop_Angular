@@ -7,7 +7,7 @@
     <li *ngFor="let product of cartProducts" class="cart-item">
       <span class="product-name">{{ product.ProductName }} - {{ product.Quantity }} available</span>
       <br>
-      <strong>Quantity:</strong>
+      <strong id="quantity">Quantity:</strong>
       <button type="button" (click)="decreaseOrderQuantity(product.ProductId)" class="quantity-btn">-</button>
       <span class="order-quantity">{{ product.OrderQuantity }}</span>
       <button type="button" (click)="increaseOrderQuantity(product.ProductId)" class="quantity-btn">+</button>

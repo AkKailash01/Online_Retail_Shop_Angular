@@ -43,15 +43,28 @@ body {
 /* Product Card */
 .product-card {
   position: relative;
-  background: #fff;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, color 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #333; /* Default text color */
 }
 
 .product-card:hover {
   transform: scale(1.05);
+  background-image: url(../../../assets/retailshop_img.jpg);
+  background-size: cover;
+  color: white; /* Change text color on hover */
+}
+
+/* Ensure all text inside changes color */
+.product-card:hover h1,
+.product-card:hover h2,
+.product-card:hover p,
+.product-card:hover a {
+  color: white !important; /* Ensure text color overrides default styles */
 }
 
 

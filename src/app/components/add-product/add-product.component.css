@@ -8,6 +8,8 @@ h2 {
 
 /* Form Container Styling */
 form {
+  color: black;
+  font-family:'Times New Roman', Times, serif;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -19,15 +21,6 @@ form {
   gap: 15px;
 }
 
-/* Label Styling */
-label {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 8px;
-  display: flex;
-  flex-direction: column;
-}
-
 /* Input Field Styling */
 input {
   padding: 10px;
@@ -36,21 +29,26 @@ input {
   border-radius: 5px;
   margin-bottom: 15px;
   outline: none;
+  width: 100%; 
+  box-sizing: border-box; 
 }
+
 
 input[type="number"] {
-  width: 100%; /* Full width for number input */
+  width: 100%; 
 }
 
+
 input[type="checkbox"] {
-  width: auto; /* Checkbox should not stretch */
-  margin-left: 10px; /* Space between checkbox and label */
-  align-self: flex-start; /* Align checkbox next to the text */
+  width: auto; 
+  margin-left: 10px; 
+  align-self: flex-start; 
 }
+
 
 /* Button Styling */
 button {
-  background-color: #007bff;
+  background-color: #1d2127;/*#007bff*/
   color: white;
   padding: 10px 20px;
   font-size: 16px;

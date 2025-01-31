@@ -7,7 +7,7 @@
 
 #cart-header {
   font-size: 1.5rem;
-  color: #2c3e50;
+  color: #c1c5c9;/*#2c3e50*/
   margin-bottom: 10px;
   text-align: center;
 }
@@ -18,31 +18,40 @@
   max-width: 700px;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ecf0f1;
+  background-color: #383b3d;/*ecf0f1*/
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #cart-list {
   list-style-type: none;
+  background-color: #383b3d;
   padding: 0;
   margin: 0;
 }
 
 .cart-item {
-  background-color: #f9f9f9;
+  background-color: #f9f9f9;/*#f9f9f9*/
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 5px;
   border: 1px solid #ddd;
 }
 
+#quantity{
+  font-family: 'Courier New', Courier, monospace;
+  color: #34495e;
+}
+
 .product-name {
-  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: large;
   color: #34495e;
 }
 
 .order-quantity {
+  font-family: 'Courier New', Courier, monospace;
   font-weight: bold;
   margin: 0 10px;
 }
