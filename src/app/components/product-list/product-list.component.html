@@ -9,7 +9,6 @@
 </div>
 
 <div class="product-list">
-  <!-- Iterate over filteredProducts, not products -->
   <div class="product-card" *ngFor="let product of filteredProducts">
     <h3>{{ product.ProductName }}</h3>
     <p><strong>Quantity:</strong> {{ product.Quantity }}</p>
@@ -19,5 +18,23 @@
       </span>
     </p>
     <button (click)="addToCart(product)" class="btn btn-primary">Add to Cart</button>
+    <button (click)="goToReviews(product.ProductId)" class="btn btn-review">Reviews</button>
   </div>
+</div>
+
+<!-- Pagination controls -->
+<div class="pagination" *ngIf="totalPages > 1">
+  <button
+    (click)="changePage(currentPage - 1)"
+    [disabled]="currentPage === 1"
+    class="pagination-btn"
+  >Previous</button>
+
+  <span>Page {{ currentPage }} of {{ totalPages }}</span>
+
+  <button
+    (click)="changePage(currentPage + 1)"
+    [disabled]="currentPage === totalPages"
+    class="pagination-btn"
+  >Next</button>
 </div>

@@ -1,0 +1,30 @@
+<div *ngIf="errorMessage" class="error-message">
+    <p>{{ errorMessage }}</p>
+  </div>
+  
+  <div class="reviews-container">
+    <h2>Product Reviews</h2>
+  
+    <!-- Display the product name -->
+    <h3>{{ productName }}</h3>
+  
+    <div *ngIf="reviews.length > 0; else noReviews">
+      <div *ngFor="let review of reviews" class="review">
+        <h4>{{ review.username }}</h4>
+        <p>⭐ Rating: {{ review.rating }}</p>
+        <p>{{ review.comment }}</p>
+        <p><strong>Date:</strong> {{ review.date }}</p> <!-- Display the date -->
+      </div>
+    </div>
+  
+    <ng-template #noReviews>
+      <p>No reviews yet. Be the first to review!</p>
+    </ng-template>
+  
+    <h3>Add Your Review</h3>
+    <input type="text" [(ngModel)]="newReview.username" placeholder="Your Name">
+    <input type="number" [(ngModel)]="newReview.rating" placeholder="Rating (1-5)" min="1" max="5">
+    <textarea [(ngModel)]="newReview.comment" placeholder="Write your review..."></textarea>
+    <button (click)="addReview()">Submit Review</button>
+  </div>
+  

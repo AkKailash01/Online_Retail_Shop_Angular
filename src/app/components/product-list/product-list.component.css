@@ -28,10 +28,6 @@ body {
 .search-container input:focus {
   border-color: #007bff; /* Highlight border when focused */
 }
-
-
-
-
 /* Product List Grid */
 .product-list {
   display: grid;
@@ -80,13 +76,6 @@ body {
   margin: 5px 0;
 }
 
-
-
-
-
-
-
-
 /* Add to Cart Button Styling */
 .product-card .btn-primary {
   background-color: #007bff;
@@ -97,15 +86,74 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-right: 10px;
+}
+/* Review Button Styling (assuming it's a similar class) */
+.product-card .btn-review {
+  background-color: #007bff; 
+  color: white;
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* Add a gap between buttons when they are on the same line */
+.product-card .btn-primary,
+.product-card .btn-review {
+  margin-right: 10px;
 }
 
-.product-card .btn-primary:hover {
+.product-card .btn-primary:hover , .product-card.btn-review:hover {
   background-color: #0056b3;
 }
 
-.product-card .btn-primary:focus {
+.product-card .btn-primary:focus, .product-card .btn-review:focus {
   outline: none;
 }
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.pagination-btn[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination span {
+  margin: 0 15px;
+  font-size: 16px;
+}
+
 
 /* Responsive Design */
 @media (max-width: 768px) {

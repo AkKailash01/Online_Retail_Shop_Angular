@@ -1,0 +1,104 @@
+/* Container for the reviews section */
+.reviews-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  /* Styling for the review list */
+  .review {
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review h4 {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .review p {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .review p strong {
+    font-weight: bold;
+  }
+  
+  .review p:nth-child(2) {
+    color: #FFD700;  /* Gold color for the rating */
+  }
+  
+  /* No reviews message */
+  .ng-template p {
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Review input fields */
+  input,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  /* Submit button */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive design: Stack elements on smaller screens */
+  @media (max-width: 768px) {
+    .reviews-container {
+      padding: 15px;
+    }
+  
+    .review {
+      padding: 12px;
+    }
+  
+    input,
+    textarea,
+    button {
+      font-size: 14px;
+    }
+  }
+  

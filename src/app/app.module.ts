@@ -10,6 +10,7 @@ import { OrderProductComponent } from './components/order-product/order-product.
 
 import { ToastrModule } from 'ngx-toastr';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ReviewsComponent } from './components/review/review.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppComponent,
     ProductListComponent,
     AddProductComponent,
-    OrderProductComponent
+    OrderProductComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
